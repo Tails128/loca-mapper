@@ -1,0 +1,14 @@
+# ignoring the config as we use it for testing
+.locamapperrc
+.locamapperrc.*
+
+# ignoring the script results used by testing
+scriptResults
+scriptResults/*
+
+# reserved folder containing testing credentials etc
+reserved
+reserved/*
+
+# node_modules
+node_modules

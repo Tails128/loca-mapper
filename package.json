@@ -1,0 +1,32 @@
+{
+  "name": "loca-mapper",
+  "version": "1.0.0",
+  "description": "A simple loca importer",
+  "engines": {
+    "node": ">=14"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-test": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tails128/loca-mapper.git"
+  },
+  "keywords": [
+    "i18n",
+    "translations"
+  ],
+  "author": "Tails128",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tails128/loca-mapper/issues"
+  },
+  "homepage": "https://github.com/Tails128/loca-mapper#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cosmiconfig": "^7.0.1",
+    "googleapis": "^105.0.0"
+  }
+}
