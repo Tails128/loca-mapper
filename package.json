@@ -1,5 +1,5 @@
 {
-  "name": "loca-mapper",
+  "name": "@tails128/loca-mapper",
   "version": "1.0.0",
   "description": "A simple loca importer",
   "engines": {
