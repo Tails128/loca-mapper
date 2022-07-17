@@ -7,7 +7,7 @@ It currently supports only Google sheetes.
 
 1. Run `npm i --save-dev loca-mapper`
 
-2. Obtain your drive credentials. They can be obtained here => [Drive Credentials].
+2. Obtain your drive credentials. They can be obtained here => [Drive Credentials](https://console.cloud.google.com/apis/credentials).
    What you'll obtain is a json file looking like this:
 
 ```JSON
@@ -38,5 +38,3 @@ It currently supports only Google sheetes.
 ```
 
 the dir folder indicates where the results will be outputted.
-
-[Drive Credentials](https://console.cloud.google.com/apis/credentials)
