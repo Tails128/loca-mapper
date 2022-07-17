@@ -1,7 +1,7 @@
 # loca-mapper
 
 A simple ts type definition for your locas.
-It currently supports only Google sheetes.
+It currently supports only Google sheets.
 
 ## How to use
 
@@ -11,11 +11,11 @@ It currently supports only Google sheetes.
   
    You'll need to generate an API key to put in a JSON structured as follows:
 
-```JSON
-{
-  "id": "the_key_here"
-}
-```
+  ```JSON
+  {
+    "id": "the_key_here"
+  }
+  ```
 
 3. Enter the drive document you wish to use, you'll see an url structured as follows:
    `https://docs.google.com/spreadsheets/d/THE_DOCUMENT_ID/edit#gid=0`
