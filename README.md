@@ -32,8 +32,8 @@ It currently supports only Google sheets.
    - "driveCredentialsPath": the location of your drive credentials. E.g: `credentials/credentials.json`
    - "outputDir": the output directory. E.g. `translations/`
    - "outputType": one of the following:
-    - "i18n": the output will be i18n compatible files
-    - "dictionary": the output will be an accessible dictionary
+    1. "i18n": the output will be i18n compatible files
+    2. "dictionary": the output will be an accessible dictionary
 
 5. Add the following line to your scripts:
 
