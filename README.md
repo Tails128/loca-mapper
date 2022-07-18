@@ -20,8 +20,9 @@ It currently supports only Google sheets.
   
   EXTREMELY IMPORTANT: DON'T SHARE YOUR API KEYS AND ADD THE FILE TO .GITIGNORE
 
-3. Enter the drive document you wish to use, you'll see an url structured as follows:
+3. Access the drive document you wish to use, you'll see an url structured as follows:
    `https://docs.google.com/spreadsheets/d/THE_DOCUMENT_ID/edit#gid=0`
+   
    get `THE_DOCUMENT_ID`
 
 4. Create a `.locamapperrc` file structured as a JSON containing the following:
