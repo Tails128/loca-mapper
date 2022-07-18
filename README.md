@@ -9,8 +9,7 @@ It currently supports only Google sheets.
 
 2. Obtain your drive credentials: 
   1. Enable your drive API [Here](https://console.cloud.google.com/apis/dashboard)
-  2. They can be obtained here => [Drive Credentials](https://console.cloud.google.com/apis/credentials).
-  
+  2. The api key can be obtained here => [Drive Credentials](https://console.cloud.google.com/apis/credentials).  
    You'll need to generate an API key and then create a JSON structured as follows:
 
   ```JSON
@@ -18,6 +17,8 @@ It currently supports only Google sheets.
     "id": "the_key_here"
   }
   ```
+  
+  EXTREMELY IMPORTANT: DON'T SHARE YOUR API KEYS AND ADD THE FILE TO .GITIGNORE
 
 3. Enter the drive document you wish to use, you'll see an url structured as follows:
    `https://docs.google.com/spreadsheets/d/THE_DOCUMENT_ID/edit#gid=0`
@@ -31,7 +32,7 @@ It currently supports only Google sheets.
    - "driveCredentialsPath": the location of your drive credentials. E.g: `credentials/credentials.json`
    - "outputDir": the output directory. E.g. `translations/`
    - "outputType": one of the following:
-     - "i18n": the output will be i18n compatible files
+   - "i18n": the output will be i18n compatible files
      - "dictionary": the output will be an accessible dictionary
 
 5. Add the following line to your scripts:
