@@ -7,9 +7,11 @@ It currently supports only Google sheets.
 
 1. Run `npm i --save-dev loca-mapper`
 
-2. Obtain your drive credentials: They can be obtained here => [Drive Credentials](https://console.cloud.google.com/apis/credentials).
+2. Obtain your drive credentials: 
+  1. Enable your drive API [Here](https://console.cloud.google.com/apis/dashboard)
+  2. They can be obtained here => [Drive Credentials](https://console.cloud.google.com/apis/credentials).
   
-   You'll need to generate an API key to put in a JSON structured as follows:
+   You'll need to generate an API key and then create a JSON structured as follows:
 
   ```JSON
   {
