@@ -7,7 +7,7 @@ const { createLocaKeys } = require("./createKeys.js");
 const { readFromDrive } = require("../utils/readFromDrive.js");
 const {
   getAppropriateWriter,
-} = require("../dataWriters.ts/getAppropriateWriter.js");
+} = require("../dataWriters/getAppropriateWriter.js");
 const {
   getAppropriateMapperWriter,
 } = require("../mappersWriters/getAppropriateWriter.js");
