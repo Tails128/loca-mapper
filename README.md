@@ -38,7 +38,7 @@ It currently supports only Google sheets.
 5. Add the following line to your scripts:
 
 ```json
-    "translations": "node loca-mapper",
+    "translations": "loca-mapper",
 ```
 
 the dir folder indicates where the results will be outputted.
