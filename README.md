@@ -34,7 +34,7 @@ It currently supports only Google sheets.
    - "outputDir": the output directory. E.g. `translations/`
    - "outputType": one of the following:
    - "i18n": the output will be i18n compatible files
-     - "dictionary": the output will be an accessible dictionary
+   - "dictionary": the output will be an accessible dictionary
 
 5. Add the following line to your scripts:
 
