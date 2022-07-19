@@ -1,6 +1,6 @@
 {
   "name": "loca-mapper",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A simple loca importer",
   "engines": {
     "node": ">=14"
@@ -25,9 +25,9 @@
     "url": "https://github.com/Tails128/loca-mapper/issues"
   },
   "homepage": "https://github.com/Tails128/loca-mapper#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "cosmiconfig": "^7.0.1",
     "googleapis": "^105.0.0"
-  }
+  },
+  "devDependencies": {}
 }
