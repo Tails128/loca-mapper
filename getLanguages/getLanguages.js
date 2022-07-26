@@ -1,8 +1,5 @@
 const { readdir, unlink } = require("fs");
 const { join } = require("path");
-const {
-  createMasterDictionary,
-} = require("../mappersWriters/createMasterDictionary.js");
 const { createLocaKeys } = require("./createKeys.js");
 const { readFromDrive } = require("../utils/readFromDrive.js");
 const {
