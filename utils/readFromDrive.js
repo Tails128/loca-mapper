@@ -11,12 +11,14 @@ exports.readFromDrive = (config, functionToApply) => {
       majorDimension: config.majorDimension,
       range: config.range,
     };
-    _readFromDrive(parsedContent.id, driveParams, functionToApply);
+    _readFromDrive(parsedContent, driveParams, functionToApply);
   });
 };
 
-const _readFromDrive = (auth, driveParams, functionToApply) => {
-  const sheets = google.sheets({ version: "v4", auth });
+const _readFromDrive = async (parsedContent, driveParams, functionToApply) => {
+  const auth = await getAuth(parsedContent);
+  google.options({ auth });
+  const sheets = google.sheets({ version: "v4" });
   sheets.spreadsheets.values.get(driveParams, (err, res) => {
     if (err) {
       console.log("The API returned an error: " + err);
@@ -25,4 +27,20 @@ const _readFromDrive = (auth, driveParams, functionToApply) => {
 
     functionToApply(res);
   });
+};
+
+const getAuth = async (content) => {
+  if (content.client_email != undefined && content.private_key != undefined) {
+    const JwtClient = new google.auth.JWT(
+      content.client_email,
+      null,
+      content.private_key,
+      ["https://www.googleapis.com/auth/spreadsheets"]
+    );
+
+    await JwtClient.authorize();
+    return JwtClient;
+  }
+
+  return content.id;
 };
