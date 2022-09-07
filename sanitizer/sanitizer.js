@@ -1,4 +1,4 @@
-export const sanitize = (entry: string) =>
+exports.sanitize = (entry) =>
   entry
     // replace '\' with '\\' to avoid escape chars
     .split("\\")
