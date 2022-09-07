@@ -1,6 +1,6 @@
 {
   "name": "loca-mapper",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A simple loca importer",
   "engines": {
     "node": ">=14"

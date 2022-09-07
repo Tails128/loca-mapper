@@ -1,4 +1,5 @@
 const { writeFile } = require("fs");
+const { sanitize } = require("../sanitizer/sanitizer");
 
 exports.createDictionary = (keys, values, directory) => {
   const imports = "import {LocaKeys} from './locaKeys';";
@@ -24,7 +25,7 @@ const getEntries = (keys, values) => {
   const minVal = Math.min(keys.length, values.length);
 
   for (let i = 0; i < minVal; i++) {
-    const cell = values[i];
+    const cell = sanitize(values[i]);
 
     if (cell != undefined && cell != "") {
       entries += `['${keys[i]}' as LocaKeys, '${cell}'],\n`;

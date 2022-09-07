@@ -1,4 +1,5 @@
 const { writeFile } = require("fs");
+const { sanitize } = require("../sanitizer/sanitizer");
 
 exports.createi18n = (keys, values, directory) => {
   const fileName = values[0];
@@ -23,7 +24,7 @@ const getEntries = (keys, values) => {
   const minVal = Math.min(keys.length, values.length);
 
   for (let i = 0; i < minVal; i++) {
-    const cell = values[i];
+    const cell = sanitize(values[i]);
 
     if (cell != undefined && cell != "") {
       entries += `  ${keys[i]}: "${cell}",\n`;
